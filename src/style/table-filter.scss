@@ -1,0 +1,17 @@
+@import "./variables.scss";
+
+.table-filter {
+  margin-top: 40px;
+  display: flex;
+  background-color: $primary-color;
+  flex-direction: row;
+  column-gap: 10px;
+  row-gap: 10px;
+  width: auto;
+  color: $text-color;
+
+  .form-button {
+    margin-top: 37px;
+    height: 41px;
+  }
+}

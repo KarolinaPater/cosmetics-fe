@@ -1,0 +1,33 @@
+@import "./variables.scss";
+
+.theme {
+  color: $title-color;
+  font-size: 18px;
+  padding-left: 70px;
+}
+
+.text-area-wrapper {
+  padding: 10px 60px 20px 80px;
+  position: relative;
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+  color: $text-color;
+  font-size: 16px;
+  //text-align: justify;
+  white-space: normal !important;
+  word-wrap: break-word;
+
+  &.full-width {
+    width: unset;
+  }
+}
+.text-area-input {
+  padding: 10px;
+  border-radius: 10px;
+  min-height: 78px;
+  resize: none;
+}
+.text-area-table {
+  color: $text-color;
+}

@@ -1,0 +1,26 @@
+@import "../variables.scss";
+
+.form-button {
+  background-color: $text-color;
+  color: $primary-color;
+  height: 35px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.form-button:hover {
+  color: $primary-color;
+  background-color: $secondary-color;
+}
+.form-button:disabled {
+  color: gray;
+  cursor: not-allowed;
+}
+
+.nav-link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border-radius: 10px;
+}

@@ -1,0 +1,24 @@
+@import "../variables.scss";
+
+.confirm-wrapper {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  background-color: rgb(0, 0, 0, 0.01);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .confirm {
+    padding: 15px;
+    min-width: 300px;
+    border-radius: 15px;
+    background-color: $primary-color;
+  }
+
+  .confirm-footer {
+    display: flex;
+    margin-top: 20px;
+    gap: 12px;
+  }
+}

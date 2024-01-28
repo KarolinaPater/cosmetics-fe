@@ -1,0 +1,23 @@
+@import "../variables.scss";
+
+.nav-button {
+  background-color: $text-color;
+  color: $primary-color;
+  height: 35px;
+  border-radius: 10px;
+  padding: 2px 16px;
+}
+
+.nav-button:hover {
+  color: $primary-color;
+  background-color: $secondary-color;
+}
+.nav-button:disabled {
+  color: gray;
+  cursor: not-allowed;
+}
+
+.nav-button-text {
+  position: relative;
+  color: red;
+}

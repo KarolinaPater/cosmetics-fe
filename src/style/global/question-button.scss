@@ -1,0 +1,22 @@
+@import "../variables.scss";
+
+.question-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18px;
+  width: 18px;
+  transition: 0.5s;
+  background-color: $primary-color;
+  border: 1px solid white;
+  border-radius: 100%;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  .question-icon {
+    width: 18px;
+  }
+}

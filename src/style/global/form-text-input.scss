@@ -1,0 +1,20 @@
+@import "../variables.scss";
+.text-input-wrapper {
+  padding-top: 10px;
+  padding-bottom: 22px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-input-label {
+  display: flex;
+  column-gap: 6px;
+  margin-bottom: 8px;
+}
+
+.text-input-input {
+  padding: 10px;
+  border-radius: 10px;
+}

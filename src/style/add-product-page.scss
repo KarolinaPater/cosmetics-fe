@@ -1,0 +1,10 @@
+@import "./variables.scss";
+
+.text-input-error {
+  color: red;
+  padding: 5px;
+  font-size: 12px;
+  position: absolute;
+  left: 1px;
+  bottom: 0px;
+}

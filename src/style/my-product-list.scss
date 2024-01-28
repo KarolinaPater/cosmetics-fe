@@ -1,0 +1,77 @@
+@import "./variables.scss";
+.my-product-list {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.my-product-table {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1240px;
+  column-gap: 10px;
+  row-gap: 10px;
+  width: auto;
+}
+
+.my-product-header {
+  height: 50px;
+  width: 100%;
+  font-size: 18px;
+  padding: 5px 30px;
+  display: grid;
+  // grid-template-columns: 40px 19% 19% 19% 28% 9% 66px;
+  grid-template-columns: 40px 260px 200px 200px 300px 160px 66px;
+  align-self: center;
+  border-bottom: solid 1px $text-color;
+
+  .my-product-cell {
+    border-left: unset;
+    color: $title-color;
+    font-weight: bold;
+  }
+}
+
+.my-product-row {
+  height: 50px;
+  width: 100%;
+  padding: 5px 30px;
+  background-color: $primary-color;
+  display: grid;
+  grid-template-columns: 40px 260px 200px 200px 300px 160px 66px;
+  align-self: center;
+
+  &:hover {
+    color: $primary-color;
+    background-color: $secondary-color;
+  }
+}
+
+.my-product-cell {
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  //white-space: nowrap; // zeby nie zawijał tekstu i był w jednej linii
+  overflow: hidden; //to co wychodzi poza komórkę jest niewidoczne
+  //border-left: 1px solid $text-color;
+
+  &:first-child {
+    border-left: 0px solid white;
+  }
+}
+
+.additional-row {
+  background-color: $text-color;
+  color: $primary-color;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  padding: 20px;
+  padding-left: 40px;
+}
+
+.additional-cell {
+  line-height: 150%;
+}

@@ -1,0 +1,37 @@
+@import "./variables.scss";
+
+.menu-header {
+  height: 40px;
+  font-weight: bold;
+  margin: auto;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.menu-button {
+  background-color: $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  padding: 0 20px;
+
+  text-align: center;
+  border-left: 1px solid $secondary-color;
+  font-size: 18px;
+  color: $secondary-color;
+  text-decoration: none;
+  &:hover {
+    color: $text-color;
+  }
+
+  &:first-child {
+    border-left: 0px solid white;
+  }
+
+  &:last-child {
+    width: 20px;
+  }
+}

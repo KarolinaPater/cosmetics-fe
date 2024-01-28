@@ -1,0 +1,38 @@
+@import "../variables.scss";
+
+.action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  padding: 2px;
+  border-radius: 6px;
+  transition: 0.5s;
+  background-color: $primary-color;
+
+  &:hover {
+    background-color: $title-color;
+  }
+
+  .edit-icon {
+    width: 18px;
+  }
+
+  .list-icon {
+    width: 22px;
+  }
+
+  .delete-icon {
+    width: 22px;
+  }
+  .expand-icon {
+    width: 22px;
+    //transition: 0.5s;
+
+    &.active {
+      transform: rotate(-180deg);
+      //transition: 0.5 s;
+    }
+  }
+}
