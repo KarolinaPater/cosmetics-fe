@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/cosmetics-fe/static/css/main.7abe1c62.css",
+    "main.js": "/cosmetics-fe/static/js/main.2be44a92.js",
+    "static/media/icon-edit.svg": "/cosmetics-fe/static/media/icon-edit.48d753a1c108aede59bdf717e2509b4a.svg",
+    "static/media/icon-trash.svg": "/cosmetics-fe/static/media/icon-trash.3367f6483fe0737c8b46599f39268742.svg",
+    "index.html": "/cosmetics-fe/index.html",
+    "static/media/icon-question.svg": "/cosmetics-fe/static/media/icon-question.38614dc68c0390b98dfbf1ff17ecccd4.svg",
+    "static/media/icon-expand.svg": "/cosmetics-fe/static/media/icon-expand.ef9d33637444cb389b9c0e4627ff16f7.svg",
+    "main.7abe1c62.css.map": "/cosmetics-fe/static/css/main.7abe1c62.css.map",
+    "main.2be44a92.js.map": "/cosmetics-fe/static/js/main.2be44a92.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7abe1c62.css",
+    "static/js/main.2be44a92.js"
+  ]
+}
