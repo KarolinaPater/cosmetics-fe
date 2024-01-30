@@ -13,7 +13,6 @@ function Account() {
     useContext(AppContext);
 
   const handleLogOut = () => {
-    console.log("wylogowywywanie");
     const config = {
       headers: {
         "x-access-token":

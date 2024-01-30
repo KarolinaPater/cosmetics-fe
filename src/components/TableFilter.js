@@ -31,10 +31,8 @@ function TableFilter(props) {
   };
 
   const handleInput = (e) => {
-    // console.log("e w handle inpucie", e);
     const name = e.target.name;
     const value = e.target.value;
-    // console.log("name", name, "value", value);
     setFilter({ ...filter, [name]: value });
   };
 

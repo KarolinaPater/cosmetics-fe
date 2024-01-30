@@ -29,7 +29,6 @@ function RegisterForm() {
   });
 
   const handleInput = (e) => {
-    console.log(e.target.name, e.target.value);
     const name = e.target.name;
     const value = e.target.value;
     setUser({ ...user, [name]: value });
@@ -68,8 +67,7 @@ function RegisterForm() {
     axios
       .post(`${process.env.REACT_APP_API_URL}/register`, user)
       .then((response) => {
-        console.log("udalo sie zarejestrować", response);
-        alert("udana rejestracja");
+        alert("Rejestracja zakończona sukcesem");
       })
       .catch((error) => {
         alert(error.response.data.message || "Błąd serwera");

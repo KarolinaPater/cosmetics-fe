@@ -26,7 +26,6 @@ function LoginForm() {
   const [backendError, setBackendError] = useState(null);
 
   const handleInput = (e) => {
-    console.log(e.target.name, e.target.value);
     const name = e.target.name;
     const value = e.target.value;
     setUser({ ...user, [name]: value });
@@ -37,6 +36,7 @@ function LoginForm() {
       email: null,
       password: null,
     });
+    setBackendError(null); //zeruje błąd Be
 
     //walidacja
     const email_error = validateEmail(user.email);
@@ -53,7 +53,7 @@ function LoginForm() {
     }
 
     setIsDisabledButton(true);
-    console.log("przed axiosem");
+
     axios
       .post(`${process.env.REACT_APP_API_URL}/login`, user)
       .then((response) => {
@@ -70,6 +70,7 @@ function LoginForm() {
       .catch((error) => {
         // alert(error.response.data.message || "Błąd serwera");
         setBackendError(error.response.data.message || "Błąd serwera");
+
         setIsDisabledButton(false);
       });
   };
@@ -83,7 +84,7 @@ function LoginForm() {
           name="email"
           value={user.email}
           onChange={handleInput}
-          error={error.name}
+          error={error.email}
         />
         <FormTextInput
           title="Hasło"
@@ -91,7 +92,7 @@ function LoginForm() {
           name="password"
           value={user.password}
           onChange={handleInput}
-          error={error.password}
+          error={error.password || backendError}
         />
         <FormButton
           title="Zaloguj się"

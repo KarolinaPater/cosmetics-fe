@@ -17,7 +17,7 @@ import "../style/layout.scss";
 
 function Layout() {
   const { setIsUserLogged, setUserInfo } = useContext(AppContext);
-  console.log("sprawdzam sesje");
+
   const checkSession = () => {
     const config = {
       headers: {

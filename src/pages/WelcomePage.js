@@ -7,11 +7,9 @@ import { useNavigate } from "react-router-dom";
 function WelcomePage() {
   const navigate = useNavigate();
   const handleRedirectToLogin = () => {
-    console.log("click");
     navigate("/login-form");
   };
   const handleRedirectToRegister = () => {
-    console.log("click");
     navigate("/register-form");
   };
 

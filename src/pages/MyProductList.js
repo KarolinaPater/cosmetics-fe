@@ -34,7 +34,7 @@ function MyProductList() {
         : undefined,
       status: filter?.status ? filter?.status : undefined,
     };
-    console.log("filtry:", newFilter);
+
     handleGetData(newFilter);
   };
 
@@ -49,7 +49,6 @@ function MyProductList() {
     axios
       .get(`${process.env.REACT_APP_API_URL}/users/get-product-list`, config)
       .then((response) => {
-        console.log("respons", response);
         const productGet = response?.data?.productList || [];
         setProduct(productGet);
       })
